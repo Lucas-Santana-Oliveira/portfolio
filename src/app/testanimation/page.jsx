@@ -23,7 +23,12 @@ const TestPage = () => {
       <motion.div
         className="w-96 h-96 bg-red-400 rounded"
         variants={variants}
+        initial="variant2" 
         animate="variant1"
+        whileHover={{ scale: 1.1 }} 
+        whileTap={{ scale: 0.9 }} 
+        drag 
+        dragConstraints={{ top: -50, left: -50, right: 50, bottom: 50 }} 
       ></motion.div>
     </div>
   );

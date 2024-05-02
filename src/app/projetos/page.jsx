@@ -13,7 +13,6 @@ const PortfolioPage = () => {
     slidesToScroll: 1
   };
 
-  
   const projects = [
     {
       name: "Game:space",
@@ -85,15 +84,14 @@ const PortfolioPage = () => {
       githubUrl: "https://github.com/Lucas-Santana-Oliveira/status",
       liveDemoUrl: "https://status-khaki.vercel.app/"
     },
-  
   ];
 
   return (
     <motion.div
       className="h-full bg-gray-200"
-      initial={{ y: "-200vh" }}
-      animate={{ y: "0%" }}
-      transition={{ duration: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <section id="projects" className="max-w-screen-md mx-auto px-8 py-12 md:py-12">
         <Slider {...settings}>
@@ -111,10 +109,11 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div className="border border-gray-300 bg-white rounded-lg p-6 mx-auto rounded-6x3 shadow-md">
-      <img
+      <motion.img
         src={imageUrl}
         alt="Project Image"
         className="rounded-full w-64 h-44 mx-auto"
+        whileHover={{ scale: 1.05 }}
       />
       <h2 className="mt-4 text-xl font-bold text-black">{name}</h2>
       <p className="mt-2 text-gray-700">{description}</p>
