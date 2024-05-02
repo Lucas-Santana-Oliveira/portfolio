@@ -6,12 +6,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio",
-  description: "portfolio page",
+  description: "pagina do portfolio ",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={inter.className}>
         <TransitionProvider>{children}</TransitionProvider>
       </body>

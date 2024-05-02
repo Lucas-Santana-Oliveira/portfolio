@@ -1,22 +1,22 @@
-/* Importando dependências */
+
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./navLink";
 
-/* Definindo links da navegação */
+
 const links = [
   { url: "/", title: "inicio" },
-  { url: "/about", title: "Sobre mim" },
+  { url: "/biografia", title: "Sobre mim" },
   { url: "/projetos", title: "Projetos" },
 ];
 
-/* Componente Navbar */
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  /* Variáveis para as animações */
+  
   const topVariants = {
     closed: {
       rotate: 0,
@@ -107,25 +107,27 @@ const Navbar = () => {
       <div className="md:hidden">
         {/* MENU BUTTON */}
         <button
-          className="w-10 h-8 flex flex-col justify-between z-50 relative"
-          onClick={() => setOpen((prev) => !prev)}
-        >
-          <motion.div
-            variants={topVariants}
-            animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded origin-left"
-          ></motion.div>
-          <motion.div
-            variants={centerVariants}
-            animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded"
-          ></motion.div>
-          <motion.div
-            variants={bottomVariants}
-            animate={open ? "opened" : "closed"}
-            className="w-10 h-1 bg-black rounded origin-left"
-          ></motion.div>
-        </button>
+  className="w-10 h-8 flex flex-col justify-between z-50 relative md:hidden"
+  onClick={() => setOpen((prev) => !prev)}
+>
+  <motion.div
+    variants={topVariants}
+    animate={open ? "opened" : "closed"}
+    className="w-10 h-1 bg-black rounded origin-left"
+  ></motion.div>
+  <motion.div
+    variants={centerVariants}
+    animate={open ? "opened" : "closed"}
+    className="w-10 h-1 bg-black rounded"
+  ></motion.div>
+  <motion.div
+    variants={bottomVariants}
+    animate={open ? "opened" : "closed"}
+    className="w-10 h-1 bg-black rounded origin-left"
+  ></motion.div>
+</button>
+
+
         {/* MENU LIST */}
         {open && (
           <motion.div

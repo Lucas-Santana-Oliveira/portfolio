@@ -21,7 +21,10 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">Quem sou eu?</h1>
             <p className="text-lg">
-              Sou alguém apaixonado por tecnologia e programação full stack. Estou em busca de criar soluções inovadoras e impactantes, vivo explorando constantemente novas tecnologias como a linguagem JavaScript/Typescript. Estou comprometido em contribuir para projetos desafiadores e colaborar com equipes talentosas.
+              Sou alguém apaixonado por tecnologia e programação full stack. 
+              Estou em busca de criar soluções inovadoras e impactantes, 
+              vivo explorando constantemente novas tecnologias como a linguagem JavaScript/Typescript.
+               Estou comprometido em contribuir para projetos desafiadores e colaborar com equipes talentosas.
             </p>
             <span className="italic">
               Lucas Santana de Oliveira
