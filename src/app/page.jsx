@@ -14,7 +14,7 @@ const Homepage = () => {
         </h1>
 
         <div className="w-full flex gap-4">
-  <a href="./" download="" className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:text-black hover:bg-white hover:border-black">
+  <a href="https://drive.usercontent.google.com/u/0/uc?id=1D21HQqEGsnfFQQVPNRP68pcvb4b0L8Es&export=download" download="cv.pdf" className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:text-black hover:bg-white hover:border-black">
     Download CV
   </a>
   <a href="mailto:lucassantanapgsp@gmail.com.com" className="p-4 rounded-lg ring-1 ring-black hover:text-white hover:bg-black">
