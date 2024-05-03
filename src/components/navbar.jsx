@@ -95,7 +95,7 @@ const Navbar = () => {
         <Link href="https://github.com/Lucas-Santana-Oliveira">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="https://www.linkedin.com/in/lucas-santana-8570011b9/">
+        <Link href="https://www.linkedin.com/in/lucas-santana-de-oliveira-8570011b9/">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
         {/* Link para o WhatsApp */}
