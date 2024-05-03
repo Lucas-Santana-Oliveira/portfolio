@@ -14,7 +14,7 @@ const Homepage = () => {
 
         <div className="w-full flex gap-4">
           <a href="https://drive.usercontent.google.com/u/0/uc?id=1GgHJtvz3-AuwcvS7u0ONiRttMb3GaDEd&export=download" download="cv.pdf" className="p-4 rounded-lg ring-1 ring-black bg-black text-white hover:text-black hover:bg-white hover:border-black">
-            Baixar Currículo
+            Download CV
           </a>
           <a href="mailto:lucassantanapgsp@gmail.com" className="p-4 rounded-lg ring-1 ring-black hover:text-white hover:bg-black">
             Contato
